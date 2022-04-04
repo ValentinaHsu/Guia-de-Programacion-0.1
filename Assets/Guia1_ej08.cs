@@ -12,17 +12,52 @@ public class Guia1_ej08 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        string[] weekDays = new string[8] { "no existe", "Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado" };
-        if (dia <= 0)
-        {
-            Debug.Log("El día ingresado no es válido");
-        }
-        else if (dia >= 8)
-        {
-            Debug.Log("El día ingresado no es válido");
-        }
+        //string[] weekDays = new string[8] { "no existe", "Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado" };
+        //if (dia <= 0)
+        //{
+        //    Debug.Log("El día ingresado no es válido");
+        //}
+        //else if (dia >= 8)
+        //{
+        //    Debug.Log("El día ingresado no es válido");
+        //}
 
-        Debug.Log(weekDays[dia]);
+        //Debug.Log(weekDays[dia]);
+
+        switch (dia)
+        {
+            case 1:
+                Debug.Log("Domingo");
+                break;
+
+            case 2:
+                Debug.Log("Lunes");
+                break;
+
+            case 3:
+                Debug.Log("Martes");
+                break;
+
+            case 4:
+                Debug.Log("Miércoles");
+                break;
+
+            case 5:
+                Debug.Log("Jueves");
+                break;
+
+            case 6:
+                Debug.Log("Viernes");
+                break;
+
+            case 7:
+                Debug.Log("Sábado");
+                break;
+
+            default:
+                Debug.Log("El día ingresado no es válido");
+                break;
+        }
 
     }
 
